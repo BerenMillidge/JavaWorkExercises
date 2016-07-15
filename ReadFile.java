@@ -25,19 +25,19 @@ public class ReadFile {
     }
     
     public String[] OpenFile() throws FileNotFoundException, IOException {
-    FileReader fr = new FileReader(path);
-    BufferedReader textReader = new BufferedReader(fr);
-    int numberOfLines =readLines();
-    String[] textData = new String[numberOfLines];
-    //Now the loop to add the lines to the array.
-    int i;
-    for (i=0; i < numberOfLines; i++)
-    {
-        textData[i] = textReader.readLine();
+        FileReader fr = new FileReader(path);
+        BufferedReader textReader = new BufferedReader(fr);
+        int numberOfLines =readLines();
+        String[] textData = new String[numberOfLines];
+        //Now the loop to add the lines to the array.
+        int i;
+        for (i=0; i < numberOfLines; i++)
+        {
+            textData[i] = textReader.readLine();
+        }
+        textReader.close();
+        return textData;  
     }
-    textReader.close();
-    return textData;  
-}
     public int readLines() throws FileNotFoundException, IOException
     {
         FileReader fr = new FileReader(path);

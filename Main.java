@@ -28,6 +28,7 @@ public class Main {
      */
     public static void main(String[] args) throws IOException {
         List<String> fileLocs = new ArrayList<>();
+        // HERE IS RANDOM CHANGE FOR GITHUB!!!!!!!! LETS SEE IF WE CAN GET THIS INTO THINGS (WE CAN'T!)
 //        fileLocs.add("C:\\Users\\Beren\\Desktop\\Java tasks\\file1.txt");//optional!
 //        fileLocs.add("C:\\Users\\Beren\\Desktop\\Java tasks\\file2.txt");//optional!
 //        fileLocs.add("C:\\Users\\Beren\\Desktop\\Java tasks\\file3.txt");//optional!
